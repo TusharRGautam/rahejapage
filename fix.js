@@ -1,0 +1,1 @@
+const fs = require('fs'); let data = fs.readFileSync('index.html', 'utf8'); let repl = fs.readFileSync('replacement.html', 'utf8'); data = data.replace(/<div class="info-box-wrapper">[\s\S]+?<\/div>\s*<\/div>/, repl); fs.writeFileSync('index.html', data);

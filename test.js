@@ -1,0 +1,1 @@
+const https = require('https'); https.get('https://www.rahejasprimetwo.com/', (res) => { let data = ''; res.on('data', (c) => data += c); res.on('end', () => { const start = data.indexOf('<a class="carousel-control-next"'); const end = data.indexOf('<!--<span class="pro-status">', start); console.log(data.substring(start, end)); }); });
