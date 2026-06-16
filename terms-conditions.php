@@ -1090,6 +1090,6 @@ $(document).ready(function() {
 </script>
 
 
-<script defer="" src="./assets/js/app1_min.js"></script>
+<script defer="" src="./assets/js/app1_min.js?v=2"></script>
 
 </body></html>
