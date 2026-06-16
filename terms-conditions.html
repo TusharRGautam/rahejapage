@@ -819,6 +819,9 @@ function bindFormSubmit() {
     // Construct JSON Payload
     const payload = {
       name: name,
+      FirstName: name,     // Added fallback 1
+      first_name: name,    // Added fallback 2
+      FullName: name,      // Added fallback 3
       phone: mobile, // Mapped to 'phone' as per client payload
       email: email,
       project: project,
