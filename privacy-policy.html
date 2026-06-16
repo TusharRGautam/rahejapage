@@ -5,7 +5,7 @@
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-K38GN942');</script>
+})(window,document,'script','dataLayer','GTM-56M224QP');</script>
 <!-- End Google Tag Manager -->
 
 
@@ -16,29 +16,50 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="description" content="Raheja Prime Two Juinagar - Commercial Project By Raheja Universal Offering Fully Air-Conditioned Retail and Office Spaces. Get A Free Quote Today. See Price List, Amenities, Images, Brochure &amp; Other Details.">
 <link rel="canonical" href="https://www.rahejasprimetwo.com">
 
-<link rel="icon" href="favicon.jpg" type="image/x-icon">
+<link rel="icon" href="favicon.jpg" type="image/jpeg">
 
 <!-- Preconnect -->
-<link rel="preconnect" href="https://www.googletagmanager.com" crossorigin="">
-<link rel="preconnect" href="https://www.google-analytics.com" crossorigin="">
+<link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+<link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
 
-<!-- Fonts preload -->
-<link rel="preload" href="./assets/fonts/Roboto-Regular.woff2" as="font" type="font/woff2" crossorigin="">
-<link rel="preload" href="./assets/fonts/Roboto-Bold.woff2" as="font" type="font/woff2" crossorigin="">
+<!-- Google Fonts Roboto -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+<!-- FontAwesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 <!-- Hero image preload -->
 <!-- Hero image preload -->
 
-<link rel="preload" as="image" href="./assets/img/desk_ban_1.webp" media="(min-width: 769px)" fetchpriority="high" imagesrcset="./assets/img/desk_ban_1.webp">
+<link
+  rel="preload"
+  as="image"
+  href="./assets/img/desk_ban_1.webp"
+  media="(min-width: 769px)"
+  fetchpriority="high"
+  imagesrcset="./assets/img/desk_ban_1.webp"
+>
 
-<link rel="preload" as="image" href="./assets/img/mob_ban_1.webp" media="(max-width: 768px)" fetchpriority="high" imagesrcset="./assets/img/mob_ban_1.webp">
+<link
+  rel="preload"
+  as="image"
+  href="./assets/img/mob_ban_1.webp"
+  media="(max-width: 768px)"
+  fetchpriority="high"
+  imagesrcset="./assets/img/mob_ban_1.webp"
+>
 
 <!-- Main CSS -->
 <link rel="preload" href="./assets/css/pure_style.css" as="style">
 <link rel="stylesheet" href="./assets/css/pure_style.css">
 
 <!-- Chat CSS (NON-BLOCKING) -->
-<link rel="stylesheet" href="./assets/css/chatv25.css" media="print" onload="this.media='all'">
+<link rel="stylesheet"
+      href="./assets/css/chatv25.css"
+      media="print"
+      onload="this.media='all'">
 
 <style>
 :root{
@@ -59,19 +80,7 @@ main.pload{
   main.pload{min-height:560px;}
 }
 
-/* ================= Fonts ================= */
-@font-face{
-  font-family:'Roboto';
-  src:url('./assets/fonts/Roboto-Regular.woff2') format('woff2');
-  font-weight:400;
-  font-display:swap;
-}
-@font-face{
-  font-family:'Roboto';
-  src:url('./assets/fonts/Roboto-Bold.woff2') format('woff2');
-  font-weight:700;
-  font-display:swap;
-}
+/* ================= Fonts loaded via Google Fonts ================= */
 
 body{
   font-family:Roboto,system-ui,sans-serif;
@@ -149,23 +158,111 @@ input#modal_my_mobile{
 /* ================= Mobile Brochure ================= */
 @media (max-width:768px){
   .download-brochure .mob_brochure img{
-    max-height:144px;
-    height:auto;
-    width:auto;
-    position:fixed;
-    left:5px;
-    top:35%;
-    z-index:999;
+    max-height: 55px;
+    width: auto;
+    height: auto;
+    position: fixed;
+    left: 5px;
+    top: 40%;
+    z-index: 999;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
   }
 }
 
+/* CSS Removed */
+
+/* Image loading transition */
+img {
+  transition: opacity 0.3s ease;
+}
+
+/* ================= Image Alignment Fixes ================= */
+.ami_sec img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 6px;
+}
+.ami_sec {
+  position: relative;
+  overflow: hidden;
+  border-radius: 6px;
+  margin-bottom: 5px;
+}
+.gallery-thumb {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+}
+@media (max-width: 768px) {
+  .gallery-thumb {
+    height: 150px;
+  }
+}
+/* Brochure sticky button styling */
+.download-brochure .desk_brochure a,
+.download-brochure .mob_brochure a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
 </style>
 
         <!-- Drift Start -->
         
-        <link rel="stylesheet" href="./assets/css/chatv26.css">
+        <link rel="stylesheet" href="./assets/css/chatv25.css" />
 
-<!-- Small Chatbot -->
+
+
+<!-- Chatbot -->
+<div id="chat-square" class="btn"></div>
+<div id="chat-close" class="btn chat-box-toggle">
+    <div class="close-img"></div>
+</div>
+
+<div class="chat-wrapper">
+    <div class="chat-header">
+        <div class="chat-header-photo">
+            <span class="active-circle"></span>
+        </div>
+        <div class="chat-header-name">Shreya Shetty </div>
+    </div>
+
+    <div class="chat-box-body">
+        <div class="chat-box-overlay"></div>
+        <div class="chat-logs">
+            <div id="hb-chat-bot">
+                <div class="chat-container">
+                    <div class="chat-messages-time"></div>
+                    <div class="chat-messages-container"></div>
+                    <div class="chat-actions-container"></div>
+                    <div class="chat-footer"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Chatbot -->
+
+
+<style>
+#chat-square {
+    bottom: 20px !important;
+    right: 20px !important;
+}
+.download-brochure .desk_brochure img {
+    right: 100px !important;
+    bottom: 20px !important;
+}
+.download-brochure .mob_brochure img {
+    left: 5px !important;
+    bottom: 90px !important;
+    top: auto !important;
+}
+</style>
 </head><body data-spy="scroll" data-target="#navbarNav"><div class="chat-pop-sm">
     <button id="chat-pop-sm-close" type="button" class="close" data-dismiss="chat-pop-sm" aria-label="Close">
         <span aria-hidden="true">×</span>
@@ -215,18 +312,26 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       <header class="micro-nav fixed-top pload">
             <nav class="navbar navbar-expand-lg navbar-light bg-white micro-navbar">
-                <a class="navbar-brand" href="/"><img alt="Raheja Prime Two Juinagar Logo" src="./assets/img/logo.svg" class="logo"></a>
+                <a class="navbar-brand" href="/" ><img alt="Raheja Prime Two Logo" src="./assets/img/logo.svg" class="logo" /></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav nav-fill">
-                        <li class="nav-item"><a class="nav-link" href="#home"><i class="mi mi-home nav-icon"></i><span class="d-sm-inline d-md-none"> Home</span></a></li>
-                        <li class="nav-item"><a class="nav-link" href="#pricing"><i class="mi mi-price nav-icon"></i> Price</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#sitefloorplan"><i class="mi mi-siteplan nav-icon"></i> Site &amp; Floor Plan</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#amenities"><i class="mi mi-ami nav-icon"></i> Amenities</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#gallery"><i class="mi mi-gallery nav-icon"></i> Gallery</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#address_section"><i class="mi mi-location nav-icon"></i> Location</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#sitevisit"><i class="mi mi-sitevisit nav-icon"></i> Virtual Site Visit </a></li>
-<li class="nav-item overflow-hidden"><a class="nav-link enqModal" href="#" data-form="md" data-title="Download brochure" data-btn="Download now" data-enquiry="Download Brochure Toolbar" data-redirect="brochure" data-redirect-file="brochure.pdf" data-toggle="modal" data-target="#enqModal"> <i class="mi mi-download nav-icon d-inline-block animated slideInDown infinite"></i> Download Brochure </a> </li> </ul>
+                        <li class="nav-item"><a class="nav-link" href="#home"><i class="fa-solid fa-house nav-icon text-dark mr-1"></i><span class="d-sm-inline d-md-none"> Home</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#pricing"><i class="fa-solid fa-money-bill-wave nav-icon text-dark mr-1"></i> Price</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#sitefloorplan"><i class="fa-solid fa-building nav-icon text-dark mr-1"></i> Site &amp; Floor Plan</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#amenities"><i class="fa-solid fa-wifi nav-icon text-dark mr-1"></i> Amenities</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#gallery"><i class="fa-solid fa-images nav-icon text-dark mr-1"></i> Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#address_section"><i class="fa-solid fa-location-dot nav-icon text-dark mr-1"></i> Location</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#sitevisit"><i class="fa-solid fa-play nav-icon text-dark mr-1"></i> Virtual Site Visit </a></li>
+<li class="nav-item overflow-hidden"><a class="nav-link enqModal" href="#" data-form="md" data-title="Download brochure" data-btn="Download now" data-enquiry="Download Brochure Toolbar" data-redirect="brochure" data-redirect-file="brochure.pdf" data-toggle="modal" data-target="#enqModal" > <i class="fa-solid fa-download nav-icon text-dark mr-1 animated slideInDown infinite"></i> Download Brochure </a> </li> </ul>
+                </div>
+                <div class="navbar-right-buttons d-none d-lg-flex align-items-stretch">
+                    <a href="#" class="btn btn-secondary rounded-0 d-flex align-items-center enqModal" style="background:#333; color:#fff; border:none; padding:0 15px; font-size:14px;" data-form="md" data-title="Download Price Sheet" data-btn="Download now" data-enquiry="Download Price Sheet Navbar" data-redirect="brochure" data-toggle="modal" data-target="#enqModal">
+                        <i class="fa-solid fa-file-pdf mr-1 text-white"></i> Download<br>Price Sheet
+                    </a>
+                    <a href="tel:+916292151107" class="btn btn-dark rounded-0 d-flex align-items-center" style="background:#222; color:#fff; border:none; padding:0 20px; font-size:16px; font-weight:bold;">
+                        <i class="fa-solid fa-phone mr-2 text-white"></i> +916292151107
+                    </a>
                 </div>
             </nav>
         </header>
@@ -289,7 +394,7 @@ This website is not the official one; it is only meant to be used for informativ
      }
 </style>
      <!--exit modal 1 start -->
-     <div class="modal fade lightbox" id="enqModal233" role="dialog" aria-hidden="true"></div>
+     <div class="modal fade lightbox" id="enqModal233"  role="dialog" aria-hidden="true"></div>
      <!--Exit modal 1 end-->
      <!--exit modal 2 start -->
      <div class="modal fade lightbox2 abc"></div> 
@@ -297,15 +402,23 @@ This website is not the official one; it is only meant to be used for informativ
             <div class="micro-side text-center">
                 <div class="og-section pb-2">
                     <ul class="nav nav-fill og-block">
-                        <li class="new-pdf nav-item enqModal" data-form="lg" data-title="Download Price Sheet" data-btn="Download Now" data-enquiry="Download Price Sheet Top Corner Desktop" data-toggle="modal" data-target="#enqModal"><div><img src="assets/img/newpdfimg.png" class="bounce pdf-img"></div><div>Download<br>Price Sheet</div></li>
-                        <li class="nav-item driftc d-flex-center-items"> <a href="tel:+912246180880" class="textcolor d-flex-center-items"><i class="mi mi-call"></i> +912246180880</a></li>   
+                        <li class="new-pdf nav-item enqModal" data-form="lg" data-title="Download Price Sheet" data-btn="Download Now" data-enquiry="Download Price Sheet Top Corner Desktop" data-toggle="modal" data-target="#enqModal"><div><img src="assets/img/logo.svg" class="bounce pdf-img"></div><div>Download<br>Price Sheet</div></li>
+                        <li class="nav-item driftc d-flex-center-items"> <a href="tel:+916292151107" class="textcolor d-flex-center-items"><i class="fa-solid fa-phone"></i> +916292151107</a></li>   
                     </ul>
-                    <button class="btn-danger pulse-shadow btn btn-sm btn-info micro-form-btn-sm effectScale enqModal mt-1" data-form="sm" data-title="Instant Call Back" data-btn="Request Call Now" data-enquiry="Request Call Back" data-toggle="modal" data-target="#enqModal">
-                        <span class="mi mi-call action-icon"></span> Instant Call Back</button>
+                    <button
+                        class="btn-danger pulse-shadow btn btn-sm btn-info micro-form-btn-sm effectScale enqModal mt-1"
+                        data-form="sm"
+                        data-title="Instant Call Back"
+                        data-btn="Request Call Now"
+                        data-enquiry="Request Call Back"
+                        data-toggle="modal"
+                        data-target="#enqModal"
+                    >
+                        <span class="fa-solid fa-phone action-icon"></span> Instant Call Back</button>
                 </div>
                 <span class="d-block form-heading font-weight-bold mr-tb-text">Get The Best Quote</span>
-                <form action="https://microsite.fanmrealty.com/live/lead-callback-v25.php" method="post" class="form-side" id="pardotForm">
-                    <input type="text" id="fname" placeholder="Name" name="fname" class="form-control rounded-0 micro-form-field" required="">
+                <form action="https://microsite.fanmrealty.com/live/lead-callback-v25.php" method="post" class="form-side" id="pardotForm" class="pardotForm">
+                    <input type="text" id="fname" placeholder="Name" name="fname" class="form-control rounded-0 micro-form-field" required>
                     <div class="error" id="name_error"></div>
                     <input type="email" id="email" placeholder="Email Address(Optional)" name="email" class="form-control rounded-0 micro-form-field">
                     <div class="error" id="address_error"></div>
@@ -316,16 +429,16 @@ This website is not the official one; it is only meant to be used for informativ
                         <option data-countrycode="DZ" value="Algeria" data-contry_code="213">Algeria (+213)</option>
                         <option data-countrycode="AS" value="American Samoa" data-contry_code="1-684">American Samoa (+1-684)</option>
                     </select>
-                    <input type="hidden" value="+91" name="country_code" id="country_code" class="operations-supplierCapacity">
+                    <input type="hidden" value="+91"  name="country_code" id="country_code" class="operations-supplierCapacity" />
                    
                     <input name="modal_my_mobile2" class="form-control numeric rounded-0 micro-form-field" id="modal_my_mobile" pattern="^[_0-9]+" placeholder="Phone number" type="text" value="" required="required" data-error="Please enter your valid mobile number" onkeyup="if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g,'')">
         			<input type="hidden" id="first_name" name="first_name">
         		    <input type="hidden" id="last_name" name="last_name">
                     <input type="hidden" id="builder" name="builder" value="Raheja Universal">
-                    <input type="hidden" id="project" name="project" value="Raheja Prime One">
-                    <input type="hidden" id="lead_source" name="lead_source" value="Microsite">
-                    <input type="hidden" name="ip" id="ip" value="43.255.220.7">
-                    <input type="hidden" name="mobile" id="modal_dg_mobile2" class="mobileconcat">
+                    <input type="hidden" id="project" name="project" value="Raheja Prime Two">
+                    <input type=hidden id="lead_source" name="lead_source" value="Microsite">
+                    <input type="hidden" name=ip id="ip" value="103.6.187.51">
+                    <input type="hidden" name=mobile id="modal_dg_mobile2" class="mobileconcat">
                     <input type="hidden" id="enquiredfor" name="enquiredfor" value="Pre Register here for Best Offers">
                     <input type="hidden" name="home_url" value="https://www.rahejasprimetwo.com/privacy-policy.html">
                     <input type="hidden" name="gclid" id="gclid" value="">
@@ -339,37 +452,37 @@ This website is not the official one; it is only meant to be used for informativ
                 <input type="hidden" name="utm_placement" id="utm_placement" value="">
                 <input type="hidden" name="utm_adposition" id="utm_adposition" value="">
                 <input type="hidden" id="organization_name" name="organization_name">
-                    <input type="submit" value="Get It Now" class="btn btn-info micro-form-btn effetMoveGradient submitBtn" id="submitBtn">
+                    <input type="submit" value="Get It Now"  class="btn btn-info micro-form-btn effetMoveGradient submitBtn"  id="submitBtn">
                 <div><span class="errorMessage" id="errorMessage2" style="color: red; margin-left: 10px;"></span></div>
                 </form>
                 
             </div>
-                       <div class="modal fade" id="enqModal" role="dialog" aria-label="Connect with Us" aria-hidden="true">
+                       <div class="modal fade" id="enqModal"  role="dialog" aria-label="Connect with Us" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered enq-modal" role="document">
                     <div class="modal-content popmodal">
                         <div class="modal-body text-center">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                             <!--<div class="modal-head d-none"><span class="modal-title"> Download Brochure</span></div>-->
                             <div class="d-flex">
                                 <div class="flex-fill align-self-center flex-shrink-1 modal-highlight-bg d-none d-lg-block popbox-left">
-                                    <div class="poplogo-box"><span class="popup-logo"><img alt="Raheja Prime Two Juinagar  Logo" src="./assets/img/logo.svg" class="poplogo"></span></div>
+                                    <div class="poplogo-box"><span class="popup-logo"><img alt="Raheja Prime Two Logo" src="./assets/img/logo.svg" class="poplogo"></span></div>
                                     <div class="popleftsec">
                                         <div class="popleftinner">
                                             <span class="modal-highlight-title">We Promise</span>
                                             <ul class="modal-highlight">
-                                                <li><i class="mi mi-support-call"></i><span>Instant Call Back</span></li>
-                                                <li><i class="mi mi-support-visit"></i><span>Free Site Visit</span></li>
-                                                <li><i class="mi mi-support-price"></i><span>Unmatched Price</span></li>
+                                                <li><i class="fa-solid fa-phone" style="font-size: 20px; margin-right: 15px; vertical-align: middle;"></i><span>Instant Call Back</span></li>
+                                                <li><i class="fa-solid fa-car" style="font-size: 20px; margin-right: 15px; vertical-align: middle;"></i><span>Free Site Visit</span></li>
+                                                <li><i class="fa-solid fa-tag" style="font-size: 20px; margin-right: 15px; vertical-align: middle;"></i><span>Unmatched Price</span></li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="flex-fill popbox-right">
                                     <div class="modal-head d-none"><span class="modal-title"> Download Brochure</span></div>
-                                    <div class="poplogo-box desktop"><span class="popup-logo"><img alt="Raheja Prime Two Juinagar  Logo" src="./assets/img/logo.svg" class="poplogo logo"></span></div>
+                                    <div class="poplogo-box desktop"><span class="popup-logo"><img alt="Raheja Prime Two Logo" src="./assets/img/logo.svg" class="poplogo logo"></span></div>
                                     <span class="modal-title-secondary text-left"> Register here and Avail the <span class="text-danger">Best Offers!!</span></span>
-                                    <form action="https://microsite.fanmrealty.com/live/lead-callback-v25.php" method="post" class="form-side" id="pardotForm">
-                                    <input type="text" id="fname" placeholder="Name" name="fname" class="form-control rounded-0 micro-form-field" required="">
+                                    <form action="https://microsite.fanmrealty.com/live/lead-callback-v25.php" method="post" class="form-side" id="pardotForm" class="pardotForm">
+                                    <input type="text" id="fname" placeholder="Name" name="fname" class="form-control rounded-0 micro-form-field" required>
                                     <div class="error" id="name_error"></div>
                                     <input type="email" id="email" placeholder="Email Address(Optional)" name="email" class="form-control rounded-0 micro-form-field">
                                     <div class="error" id="address_error"></div>
@@ -381,16 +494,16 @@ This website is not the official one; it is only meant to be used for informativ
                                         <option data-countrycode="AS" value="American Samoa" data-contry_code="1-684">American Samoa (+1-684)</option>
                                        
                                     </select>
-                                    <input type="hidden" value="91" name="country_code" id="country_code" class="operations-supplierCapacity">
+                                    <input type="hidden" value="91" name="country_code" id="country_code" class="operations-supplierCapacity" />
                                     <input name="modal_my_mobile2" class="form-control numeric rounded-0 micro-form-field" id="modal_my_mobile" pattern="^[_0-9]+" placeholder="Phone number" type="text" value="" required="required" data-error="Please enter your valid mobile number" onkeyup="if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g,'')">
                                     <!--<input type="hidden" name="my_country_name" id="country" value="India">-->
     		                    	<input type="hidden" id="first_name" name="first_name">
     		                        <input type="hidden" id="last_name" name="last_name">
                                     <input type="hidden" id="builder" name="builder" value="Raheja Universal">
-                                    <input type="hidden" id="project" name="project" value="Raheja Prime One">
-                                    <input type="hidden" id="lead_source" name="lead_source" value="Microsite">
-                                    <input type="hidden" name="ip" id="ip" value="43.255.220.7">
-                                    <input type="hidden" name="mobile" id="modal_dg_mobile" class="mobileconcat">
+                                    <input type="hidden" id="project" name="project" value="Raheja Prime Two">
+                                    <input type=hidden id="lead_source" name="lead_source" value="Microsite">
+                                    <input type="hidden" name=ip id="ip" value="103.6.187.51">
+                                    <input type="hidden" name=mobile id="modal_dg_mobile" class="mobileconcat">
                                     <input type="hidden" id="enquiredfor" name="enquiredfor" value="Get Instant Call Back Home Page Pop Up">
                                     <input type="hidden" name="home_url" value="https://www.rahejasprimetwo.com/privacy-policy.html">
                                     <input type="hidden" name="gclid" id="gclid" value="">
@@ -415,27 +528,14 @@ This website is not the official one; it is only meant to be used for informativ
         <!--Privacy Policy LINK-->
         <!--<small class="modal-call-btn bg-white">-->
     <!--CONTACT NO-->
-            <a href="tel:+912246180880" aria-label="Contact No." class="popcallbtn modal-call-btn d-block" style="padding: 0.5rem 1rem;"><i class="mi mi-call"></i> +912246180880</a>
+            <a href="tel:+916292151107" aria-label="Contact No." class="popcallbtn modal-call-btn d-block" style="padding: 0.5rem 1rem;"><i class="fa-solid fa-phone"></i> +916292151107</a>
            
     <!--</small> -->
                         </div>
                     </div>
                 </div>
             </div>
-<!--DOWNLOAD BROCHURE BUTTON START-->
-            <div class="download-brochure">
-                <div class="desk_brochure">
-                    <a class="enqModal" href="#" data-form="md" data-title="Download brochure" data-btn="Download now" data-enquiry="Download Brochure Sticky Desktop" data-redirect="brochure" data-redirect-file="brochure.pdf" data-toggle="modal" data-target="#enqModal">
-                        <img src="./assets/img/brochure_icon_n1.webp" alt="Download brochure" width="48" height="48" loading="lazy" decoding="async" style="max-width:100%;height:auto;">
 
-                    </a>
-                </div>
-                <div class="mob_brochure">
-                    <a class="enqModal" href="#" data-form="md" data-title="Download brochure" data-btn="Download now" data-enquiry="Download Brochure Sticky Mobile" data-redirect="brochure" data-redirect-file="brochure.pdf" data-toggle="modal" data-target="#enqModal">
-                        <img src="./assets/img/brochure_icon_mob_n1.webp" alt="Download brochure" width="83" height="252" loading="lazy" decoding="async" style="max-width:100%;height:auto;">
-                    </a>
-                </div>
-            </div>
          <!--COOKIES CODE START-->
             <style>
                 .cookiealert {position: fixed;bottom: 0;left: 0;width: 100%;margin: 0 !important;z-index: 9999;opacity: 0;visibility: hidden;border-radius: 0;transform: translateY(100%);transition: all 500ms ease-out;color: #ecf0f1;background: #212327;}
@@ -498,9 +598,9 @@ This website is not the official one; it is only meant to be used for informativ
             </script>
             <!--COOKIES CODE END-->
        <!-- Start of Async Drift Code --> 
-        <script defer="defer">
+        <script  defer="defer">
             var executed = true;
-            var h1tag = "Raheja Prime Two Juinagar";
+            var h1tag = "Raheja Prime Two";
             window.onscroll = function () {
             var addressSection = document.querySelector('#address_section');
             if (executed && addressSection) { // <- Added addressSection check
@@ -514,7 +614,7 @@ This website is not the official one; it is only meant to be used for informativ
                             <a href="#" class="text-decoration-none enqModal" aria-label="Download Location Map" data-form="lg" data-title="Download Location Map" data-btn="Download now" data-enquiry="View Location Map" data-toggle="modal" data-target="#enqModal"> 
                                 <div class="at-property-item mb-2"> 
                                     <div class="at-property-img location-map lazyloaded" data-expand="-1"> 
-                                        <img alt="Location map" class="shadow-sm border border-grey lazyautosizes ls-is-cached lazyloaded ls-inview" src="./assets/img/locationmap.webp"> 
+                                        <img alt="Location map" class="shadow-sm border border-grey lazyautosizes ls-is-cached lazyloaded ls-inview" src="./assets/img/amenities/brochure_page-0018.jpg?v=1"> 
                                         <div class="at-property-overlayer"></div> 
                                         <span class="at-property-btn">Download Location Map</span> 
                                     </div> 
@@ -523,9 +623,9 @@ This website is not the official one; it is only meant to be used for informativ
                         </div> 
                         <div class="col-md-7 col-12 padding0 p-left-10">
                         <div class="row"> 
-                        <div class="col loc-pointer loc-pointer-first"><div class="loc-text"><i class="mi mi-loc-list-2 color-primary loc-icon"></i> <span>Thane Belapur Road </span> </div><span class="text-right">3 mins</span></div> 
-                        <div class="col loc-pointer"><div class="loc-text"><i class="mi mi-loc-list-2 color-primary loc-icon"></i> <span>Juinagar Railway Station </span></div> <span class="text-right">10 mins</span></div> 
-                        <div class="col loc-pointer"><div class="loc-text"><i class="mi mi-loc-list-2 color-primary loc-icon"></i> <span>Navi Mumbai International Airport </span> </div><span class="text-right">18 mins</span></div> 
+                        <div class="col loc-pointer loc-pointer-first"><div class="loc-text"><i class="fa-solid fa-location-dot" style="color: #1a6b4a; margin-right:5px; margin-top:2px;"></i> <span>Thane Belapur Road </span> </div><span class="text-right">3 mins</span></div> 
+                        <div class="col loc-pointer"><div class="loc-text"><i class="fa-solid fa-location-dot" style="color: #1a6b4a; margin-right:5px; margin-top:2px;"></i> <span>Nerul Station </span></div> <span class="text-right">14 mins</span></div> 
+                        <div class="col loc-pointer"><div class="loc-text"><i class="fa-solid fa-location-dot" style="color: #1a6b4a; margin-right:5px; margin-top:2px;"></i> <span>Atal Setu (MTHL) </span> </div><span class="text-right">18 mins</span></div> 
                     </div> 
                         </div>
                     </div> 
@@ -539,7 +639,7 @@ This website is not the official one; it is only meant to be used for informativ
             };
         </script>
        <!-- Onload start --> 
-        <script src="assets/js/jquery.min.js"></script> 
+        <script src="assets/js/jquery.min.js"  ></script> 
         <script type="text/javascript">
         $(document).ready(function(){
             $("input[name='modal_my_mobile2']").focusout(function(){
@@ -629,11 +729,11 @@ if (d !== "thank-you.php") {
  </script>
  
 
-<script src="./assets/js/commercialchatv25.js" defer=""></script>
+<script src="./assets/js/commercialchatv25.js" defer ></script>
 
 <script type="text/javascript">
     var chatbotApiInput = {
-        home_url: "https://www.rahejasprimetwo.com/privacy-policy.html",
+        home_url: "http://localhost:5173/",
         gclid: "",
         utm_source: "",
         utm_medium: "",
@@ -646,11 +746,11 @@ if (d !== "thank-you.php") {
         utm_adposition: " ",
         fbclid: "",
         builder: "Raheja Universal",
-        project: "Raheja Prime One",
+        project: "Raheja Prime Two",
         source: "Microsite Chat Icon",
         lead_source: "chatbot",
-        ip: "43.255.220.7",
-        imagepath :"/assets/img/chatbot/",
+        ip: "103.6.187.51",
+        imagepath :"./assets/img/chatbot/",
         leadcoversion: "hbpushleads",
         desktoptimer: 10000,
         mobiletimer: 10000,
@@ -672,85 +772,82 @@ if (d !== "thank-you.php") {
 
 <script>
 function bindFormSubmit() {
-
-  let fpPromise = null; // lazy initialized
-
-  $('form#pardotForm').off('submit').on('submit', function (e) {
+  $('form#pardotForm, form.pardotForm').off('submit').on('submit', function (e) {
     e.preventDefault();
 
     const $form = $(this);
     const $submitBtn = $form.find('button[type="submit"], input[type="submit"]');
     const $errorSpan = $form.find('.errorMessage');
 
+    // Prevent double clicking
     $submitBtn.prop('disabled', true);
+    const originalBtnText = $submitBtn.is('input') ? $submitBtn.val() : $submitBtn.text();
+    if ($submitBtn.is('input')) {
+        $submitBtn.val('Submitting...');
+    } else {
+        $submitBtn.text('Submitting...');
+    }
     $errorSpan.text('');
-    clearTimeout($errorSpan.data('timeoutId'));
 
-    $.ajax({
-      url: 'ipcheck.php',
-      type: 'GET',
-      dataType: 'json',
+    // Extract values
+    const name = $form.find('input[name="fname"]').val() || '';
+    const mobileField = $form.find('input[name="modal_my_mobile2"]').val() || '';
+    let countryCode = $form.find('input[name="country_code"]').val() || '91';
+    
+    // Remove '+' from country code if present so we get exactly 9199999999 format
+    countryCode = countryCode.replace('+', '');
+    const mobile = countryCode + mobileField; 
+    
+    const email = $form.find('input[name="email"]').val() || '';
+    const project = $form.find('input[name="project"]').val() || '';
+    const remark = $form.find('input[name="enquiredfor"]').val() || 'Lead from Website';
 
-      success: function (data) {
-        if (!data.status) {
-          showError(data.message);
-          return;
-        }
+    // B2BBricks API details (Webhook)
+    const sourceId = 'Google Performance- 3784';
+    const webhookUrl = 'https://connector.b2bbricks.com/api/Integration/hook/07163225-93ed-4208-b80c-f6c28b658e5b';
+    
+    // Construct JSON Payload
+    const payload = {
+      name: name,
+      phone: mobile, // Mapped to 'phone' as per client payload
+      email: email,
+      project: project,
+      remark: remark,
+      source: sourceId
+    };
 
-        // 🔹 Lazy-load FingerprintJS ONLY when needed
-        if (!fpPromise) {
-          fpPromise = import('https://fpjscdn.net/v3/rmevazJvk6HdBPJpRXuX')
-            .then(FingerprintJS => FingerprintJS.load({ region: 'ap' }));
-        }
+    console.log('--- B2BBricks Webhook Lead Submission ---');
+    console.log('Target URL:', webhookUrl);
+    console.log('Payload:', payload);
 
-        fpPromise
-          .then(fp => fp.get())
-          .then(result => {
-            submitWithDeviceId(result.visitorId);
-          })
-          .catch(err => {
-            console.error('FingerprintJS error:', err);
-            submitWithDeviceId('fallback-' + Date.now());
-          });
+    // Call B2BBricks Webhook
+    fetch(webhookUrl, { 
+      method: 'POST',
+      headers: {
+        'Content-Type': 'text/plain'
       },
-
-      error: function () {
-        showError('An unexpected error occurred.');
-      }
-    });
-
-    function submitWithDeviceId(deviceId) {
-      let $deviceIdField = $form.find('input[name="device_id"]');
-
-      if ($deviceIdField.length === 0) {
-        $form.append('<input type="hidden" name="device_id">');
-        $deviceIdField = $form.find('input[name="device_id"]');
-      }
-
-      $deviceIdField.val(deviceId);
-
-      console.log('Device ID:', deviceId);
-
-      // Submit safely
-      $form.off('submit');
-      $form.submit();
-    }
-
-    function showError(message) {
-      $errorSpan.text(message);
-
-      const timeoutId = setTimeout(() => {
-        $errorSpan.fadeOut(400, function () {
-          $(this).text('').show();
-        });
-      }, 5000);
-
-      $errorSpan.data('timeoutId', timeoutId);
-      $submitBtn.prop('disabled', false);
-    }
+      body: JSON.stringify(payload),
+      mode: 'no-cors' 
+    })
+      .then(() => {
+        console.log('Lead request dispatched to B2BBricks successfully.');
+        // Brief delay (1000ms) to ensure request goes out before page redirects and allows seeing logs
+        setTimeout(() => {
+          window.location.href = 'thank-you.php';
+        }, 1000);
+      })
+      .catch(err => {
+        console.error('API Error:', err);
+        $errorSpan.text('Failed to submit. Please try again.');
+        $submitBtn.prop('disabled', false);
+        if ($submitBtn.is('input')) {
+            $submitBtn.val(originalBtnText);
+        } else {
+            $submitBtn.text(originalBtnText);
+        }
+      });
   });
 }
-
 
 
 // Bind when document is ready
@@ -1024,7 +1121,7 @@ $(document).ready(function() {
   { code: "GG", name: "Guernsey", dial: "44-1481" },
   { code: "IM", name: "Isle of Man", dial: "44-1624" },
   { code: "JE", name: "Jersey", dial: "44-1534" },
-  { code: "CW", name: "Cura�ao", dial: "599" },
+  { code: "CW", name: "CuraÃ¯Â¿Â½ao", dial: "599" },
   { code: "CI", name: "Ivory Coast", dial: "225" },
   { code: "XK", name: "Kosovo", dial: "383" }
 ];
@@ -1040,7 +1137,7 @@ $(document).ready(function() {
       );
 
       countries.forEach(c => {
-        if (existingValues.has(c.name)) return; // 🔒 skip existing 5
+        if (existingValues.has(c.name)) return; // Ã°Å¸â€â€™ skip existing 5
 
         const opt = document.createElement("option");
         opt.value = c.name;
@@ -1080,6 +1177,329 @@ $(document).ready(function() {
 </script>
 
 
-<script defer="" src="./assets/js/app1_min.js?v=2"></script>
+<script defer src="./assets/js/app1_min.js?v=2"></script>
+<script>
+const observer = new MutationObserver((mutations) => {
+    mutations.forEach((mutation) => {
+        if (mutation.type === 'childList') {
+            mutation.addedNodes.forEach((node) => {
+                if (node.nodeType === Node.ELEMENT_NODE) {
+                    if (node.innerHTML.includes('Shreya Shetty ') || node.innerHTML.includes('Pooja Agarwal')) {
+                        node.innerHTML = node.innerHTML.replace(/Shreya Shetty /g, 'Shreya Shetty').replace(/Pooja Agarwal/g, 'Shreya Shetty');
+                    }
+                    node.querySelectorAll('*').forEach(child => {
+                        if (child.innerHTML && (child.innerHTML.includes('Shreya Shetty ') || child.innerHTML.includes('Pooja Agarwal'))) {
+                            child.innerHTML = child.innerHTML.replace(/Shreya Shetty /g, 'Shreya Shetty').replace(/Pooja Agarwal/g, 'Shreya Shetty');
+                        }
+                    });
+                }
+            });
+        }
+    });
+});
+observer.observe(document.body, { childList: true, subtree: true });
+</script>
+<style>
+.floating-brochure-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 80px;
+    background: #fff;
+    color: #333;
+    padding: 8px 14px 8px 16px;
+    border-radius: 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+    font-weight: 600;
+    font-size: 12px;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #ddd;
+    text-decoration: none;
+    line-height: 1.3;
+    transition: all 0.3s ease;
+}
+.floating-brochure-btn:hover {
+    text-decoration: none;
+    color: #000;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 14px rgba(0,0,0,0.25);
+}
+.floating-brochure-btn .btn-text {
+    display: flex;
+    flex-direction: column;
+    color: #333;
+    font-size: 11.5px;
+    font-weight: 700;
+    line-height: 1.25;
+    text-align: left;
+}
+.floating-brochure-btn .pdf-icon {
+    font-size: 26px;
+    color: #d93025;
+    flex-shrink: 0;
+    animation: bouncePdf 1.2s infinite ease-in-out;
+}
+@keyframes bouncePdf {
+    0%, 100% { transform: translateY(0); }
+    40%       { transform: translateY(-6px); }
+    60%       { transform: translateY(-3px); }
+}
+@media (max-width: 768px) {
+    .floating-brochure-btn {
+        bottom: 75px;
+        right: 15px;
+    }
+  { code: "VC", name: "Saint Vincent and the Grenadines", dial: "1-784" },
+  { code: "WS", name: "Samoa", dial: "685" },
+  { code: "SM", name: "San Marino", dial: "378" },
+  { code: "ST", name: "Sao Tome and Principe", dial: "239" },
+  { code: "SA", name: "Saudi Arabia", dial: "966" },
+  { code: "SN", name: "Senegal", dial: "221" },
+  { code: "SC", name: "Seychelles", dial: "248" },
+  { code: "SL", name: "Sierra Leone", dial: "232" },
+  { code: "SG", name: "Singapore", dial: "65" },
+  { code: "SK", name: "Slovakia", dial: "421" },
+  { code: "SI", name: "Slovenia", dial: "386" },
+  { code: "SB", name: "Solomon Islands", dial: "677" },
+  { code: "SO", name: "Somalia", dial: "252" },
+  { code: "ZA", name: "South Africa", dial: "27" },
+  { code: "GS", name: "South Georgia", dial: "500" },
+  { code: "ES", name: "Spain", dial: "34" },
+  { code: "LK", name: "Sri Lanka", dial: "94" },
+  { code: "SH", name: "Saint Helena", dial: "290" },
+  { code: "PM", name: "St. Pierre and Miquelon", dial: "508" },
+  { code: "SD", name: "Sudan", dial: "249" },
+  { code: "SR", name: "Suriname", dial: "597" },
+  { code: "SJ", name: "Svalbard and Jan Mayen Islands", dial: "47" },
+  { code: "SZ", name: "Swaziland", dial: "268" },
+  { code: "SE", name: "Sweden", dial: "46" },
+  { code: "CH", name: "Switzerland", dial: "41" },
+  { code: "SY", name: "Syrian Arab Republic", dial: "963" },
+  { code: "TW", name: "Taiwan", dial: "886" },
+  { code: "TJ", name: "Tajikistan", dial: "992" },
+  { code: "TZ", name: "Tanzania", dial: "255" },
+  { code: "TH", name: "Thailand", dial: "66" },
+  { code: "TG", name: "Togo", dial: "228" },
+  { code: "TK", name: "Tokelau", dial: "690" },
+  { code: "TO", name: "Tonga", dial: "676" },
+  { code: "TT", name: "Trinidad and Tobago", dial: "1-868" },
+  { code: "TN", name: "Tunisia", dial: "216" },
+  { code: "TR", name: "Turkey", dial: "90" },
+  { code: "TM", name: "Turkmenistan", dial: "993" },
+  { code: "TC", name: "Turks and Caicos Islands", dial: "1-649" },
+  { code: "TV", name: "Tuvalu", dial: "688" },
+  { code: "UG", name: "Uganda", dial: "256" },
+  { code: "UA", name: "Ukraine", dial: "380" },
+  { code: "AE", name: "United Arab Emirates", dial: "971" },
+  { code: "GB", name: "United Kingdom", dial: "44" },
+  { code: "US", name: "United States", dial: "1" },
+  { code: "UM", name: "United States Minor Outlying Islands", dial: "246" },
+  { code: "UY", name: "Uruguay", dial: "598" },
+  { code: "UZ", name: "Uzbekistan", dial: "998" },
+  { code: "VU", name: "Vanuatu", dial: "678" },
+  { code: "VA", name: "Vatican City State", dial: "379" },
+  { code: "VE", name: "Venezuela", dial: "58" },
+  { code: "VN", name: "Vietnam", dial: "84" },
+  { code: "VG", name: "Virgin Islands (British)", dial: "1-284" },
+  { code: "VI", name: "Virgin Islands (U.S.)", dial: "1-340" },
+  { code: "WF", name: "Wallis and Futuna Islands", dial: "681" },
+  { code: "EH", name: "Western Sahara", dial: "212" },
+  { code: "YE", name: "Yemen", dial: "967" },
+  { code: "RS", name: "Serbia", dial: "381" },
+  { code: "ZM", name: "Zambia", dial: "260" },
+  { code: "ZW", name: "Zimbabwe", dial: "263" },
+  { code: "AX", name: "Aaland Islands", dial: "358" },
+  { code: "PS", name: "Palestine", dial: "970" },
+  { code: "ME", name: "Montenegro", dial: "382" },
+  { code: "GG", name: "Guernsey", dial: "44-1481" },
+  { code: "IM", name: "Isle of Man", dial: "44-1624" },
+  { code: "JE", name: "Jersey", dial: "44-1534" },
+  { code: "CW", name: "CuraÃ¯Â¿Â½ao", dial: "599" },
+  { code: "CI", name: "Ivory Coast", dial: "225" },
+  { code: "XK", name: "Kosovo", dial: "383" }
+];
 
-</body></html>
+    document.querySelectorAll('.my_country_name').forEach(select => {
+
+      if (select.dataset.loaded === "true") return;
+      select.dataset.loaded = "true";
+
+      // Collect existing option values (avoid duplicates)
+      const existingValues = new Set(
+        Array.from(select.options).map(o => o.value.trim())
+      );
+
+      countries.forEach(c => {
+        if (existingValues.has(c.name)) return; // Ã°Å¸â€â€™ skip existing 5
+
+        const opt = document.createElement("option");
+        opt.value = c.name;
+        opt.textContent = `${c.name} (+${c.dial})`;
+        opt.setAttribute("data-countrycode", c.code);
+        opt.setAttribute("data-contry_code", c.dial);
+        select.appendChild(opt);
+      });
+    });
+
+    removeListeners();
+  }
+
+  function removeListeners() {
+    window.removeEventListener("mousemove", trigger);
+    window.removeEventListener("touchstart", trigger);
+    window.removeEventListener("scroll", trigger);
+    window.removeEventListener("keydown", trigger);
+  }
+
+  function trigger() {
+    initCountrySelect();
+  }
+
+  // Desktop
+  window.addEventListener("mousemove", trigger, { once: true });
+
+  // Mobile
+  window.addEventListener("touchstart", trigger, { once: true });
+
+  // Backup
+  window.addEventListener("scroll", trigger, { once: true });
+  window.addEventListener("keydown", trigger, { once: true });
+
+})();
+
+</script>
+
+
+<script defer src="./assets/js/app1_min.js?v=2"></script>
+<script>
+const observer = new MutationObserver((mutations) => {
+    mutations.forEach((mutation) => {
+        if (mutation.type === 'childList') {
+            mutation.addedNodes.forEach((node) => {
+                if (node.nodeType === Node.ELEMENT_NODE) {
+                    if (node.innerHTML.includes('Shreya Shetty ') || node.innerHTML.includes('Pooja Agarwal')) {
+                        node.innerHTML = node.innerHTML.replace(/Shreya Shetty /g, 'Shreya Shetty').replace(/Pooja Agarwal/g, 'Shreya Shetty');
+                    }
+                    node.querySelectorAll('*').forEach(child => {
+                        if (child.innerHTML && (child.innerHTML.includes('Shreya Shetty ') || child.innerHTML.includes('Pooja Agarwal'))) {
+                            child.innerHTML = child.innerHTML.replace(/Shreya Shetty /g, 'Shreya Shetty').replace(/Pooja Agarwal/g, 'Shreya Shetty');
+                        }
+                    });
+                }
+            });
+        }
+    });
+});
+observer.observe(document.body, { childList: true, subtree: true });
+</script>
+<style>
+.floating-brochure-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 180px;
+    background: #fff;
+    color: #333;
+    padding: 10px 16px 10px 20px;
+    border-radius: 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+    font-weight: normal;
+    font-size: 13px;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border: 1px solid #ddd;
+    text-decoration: none;
+    line-height: 1.3;
+    transition: all 0.3s ease;
+}
+.floating-brochure-btn:hover {
+    text-decoration: none;
+    color: #000;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 14px rgba(0,0,0,0.25);
+}
+.floating-brochure-btn .btn-text {
+    display: flex;
+    flex-direction: column;
+    color: #333;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 1.25;
+    text-align: right;
+}
+.floating-brochure-btn .pdf-icon {
+    font-size: 28px;
+    color: #d93025;
+    flex-shrink: 0;
+    animation: bouncePdf 1.2s infinite ease-in-out;
+}
+@keyframes bouncePdf {
+    0%, 100% { transform: translateY(0); }
+    40%       { transform: translateY(-6px); }
+    60%       { transform: translateY(-3px); }
+}
+@media (max-width: 768px) {
+    .floating-brochure-btn {
+        bottom: 50%;
+        left: 0;
+        right: auto;
+        transform: translateY(-50%);
+        flex-direction: column;
+        border-radius: 0 10px 10px 0;
+        padding: 14px 6px 14px 8px;
+        gap: 6px;
+        box-shadow: 2px 0 8px rgba(0,0,0,0.25);
+    }
+    .floating-brochure-btn .btn-text {
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        font-size: 13px;
+        align-items: center;
+        line-height: 1.1;
+    }
+    .floating-brochure-btn .pdf-icon {
+        font-size: 28px;
+        margin-bottom: 4px;
+    }
+    .chat-wrapper, #chat-square {
+        bottom: 100px !important;
+    }
+}
+</style>
+
+<a href="#" class="enqModal floating-brochure-btn" data-form="md" data-title="Download Brochure" data-btn="Download now" data-enquiry="Download Brochure Floating" data-redirect="brochure" data-redirect-file="brochure.pdf" data-toggle="modal" data-target="#enqModal">
+    <span class="btn-text"><span>Download</span><span>Brochure</span></span>
+    <i class="fa-solid fa-file-pdf pdf-icon"></i>
+</a>
+
+<!-- Mobile Action Bar -->
+<style>
+@media (min-width: 768px) {
+    .mob-action { display: none !important; }
+}
+</style>
+<div class="mob-action d-md-none d-block" style="background-color: #3d8f61; padding-top: 8px; padding-bottom: 8px;">
+    <ul class="nav d-flex align-items-center justify-content-between" style="margin-bottom: 6px; flex-wrap: nowrap;">
+        <li class="nav-item text-center" style="border-right: 1px solid rgba(255,255,255,0.4); width: 33.33%; padding: 0;">
+            <a href="tel:+916292151107" class="d-flex align-items-center justify-content-center" style="text-decoration: none; color: #fff !important; font-size: 13px;">
+                <i class="fa-solid fa-phone" style="font-size: 13px; color: #fff !important; margin-right: 5px;"></i> Call
+            </a>
+        </li>
+        <li class="nav-item text-center" style="border-right: 1px solid rgba(255,255,255,0.4); width: 33.33%; padding: 0;">
+            <a href="#" class="d-flex flex-column align-items-center justify-content-center enqModal" data-form="md" data-title="Download Floor Plan" data-btn="Download now" data-enquiry="Download Floor Plan Mobile Bar" data-redirect="brochure" data-redirect-file="brochure.pdf" data-toggle="modal" data-target="#enqModal" style="text-decoration: none; color: #fff !important; font-size: 13px; line-height: 1.2;">
+                <i class="fa-solid fa-download" style="font-size: 15px; color: #fff !important; margin-bottom: 3px;"></i> Floor Plan
+            </a>
+        </li>
+        <li class="nav-item text-center" style="width: 33.33%; padding: 0;">
+            <a href="#" class="d-flex align-items-center justify-content-center enqModal" data-form="md" data-title="Download Brochure" data-btn="Download now" data-enquiry="Download Brochure Mobile Bar" data-redirect="brochure" data-redirect-file="brochure.pdf" data-toggle="modal" data-target="#enqModal" style="text-decoration: none; color: #fff !important; font-size: 13px;">
+                <span style="background: #e23a3a; border-radius: 2px; padding: 2px; margin-right: 5px; display: inline-flex; align-items: center; justify-content: center; height: 18px; width: 18px;"><i class="fa-solid fa-file-pdf" style="color: white !important; font-size: 12px;"></i></span> Brochure
+            </a>
+        </li>
+    </ul>
+</div>
+
+</body>
+</html>
