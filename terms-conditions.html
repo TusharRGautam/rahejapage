@@ -209,6 +209,65 @@ img {
   text-align: center;
   text-decoration: none;
 }
+
+/* ===== Policy Page Responsive Fixes ===== */
+#developer {
+    padding: 20px 15px !important;
+}
+#developer .thankyou-text {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 10px;
+    line-height: 1.8;
+    font-size: 15px;
+}
+#developer .thankyou-text b {
+    color: #333;
+    display: inline-block;
+    margin-top: 5px;
+}
+#developer .thankyou-text p {
+    text-align: left !important;
+}
+@media (max-width: 768px) {
+    #developer {
+        padding: 15px 10px !important;
+    }
+    #developer .thankyou-text {
+        font-size: 14px;
+        line-height: 1.7;
+        padding: 0 5px;
+    }
+}
+/* Chat square position on mobile - don't overlap brochure button */
+@media (max-width: 767px) {
+    #chat-square {
+        bottom: 70px !important;
+        right: 15px !important;
+    }
+    #chat-close {
+        bottom: 70px !important;
+        right: 15px !important;
+    }
+    .chat-wrapper {
+        bottom: 130px !important;
+    }
+}
+
+
+/* Chat wrapper mobile fix */
+@media (max-width: 767px) {
+    .chat-wrapper {
+        width: 100% !important;
+        max-width: 100% !important;
+        right: 0 !important;
+        left: 0 !important;
+        z-index: 10000 !important;
+        bottom: 0 !important;
+        height: 100% !important;
+    }
+}
+
 </style>
 
         <!-- Drift Start -->
@@ -217,35 +276,7 @@ img {
 
 
 
-<!-- Chatbot -->
-<div id="chat-square" class="btn"></div>
-<div id="chat-close" class="btn chat-box-toggle">
-    <div class="close-img"></div>
-</div>
 
-<div class="chat-wrapper">
-    <div class="chat-header">
-        <div class="chat-header-photo">
-            <span class="active-circle"></span>
-        </div>
-        <div class="chat-header-name">Shreya Shetty </div>
-    </div>
-
-    <div class="chat-box-body">
-        <div class="chat-box-overlay"></div>
-        <div class="chat-logs">
-            <div id="hb-chat-bot">
-                <div class="chat-container">
-                    <div class="chat-messages-time"></div>
-                    <div class="chat-messages-container"></div>
-                    <div class="chat-actions-container"></div>
-                    <div class="chat-footer"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Chatbot -->
 
 
 <style>
@@ -263,46 +294,9 @@ img {
     top: auto !important;
 }
 </style>
-</head><body data-spy="scroll" data-target="#navbarNav"><div class="chat-pop-sm">
-    <button id="chat-pop-sm-close" type="button" class="close" data-dismiss="chat-pop-sm" aria-label="Close">
-        <span aria-hidden="true">×</span>
-    </button>
-    <div class="chat-pop-txt">
-        “Hey, I'm Pooja Agarwal!“ <strong>How can I help you?</strong>
-    </div>
-    <button class="chat-pop-sm-btn openchat" type="button" id="chat-square-small">Let's Chat</button>
-</div>
-<!-- Small Chatbot -->
+</head><body data-spy="scroll" data-target="#navbarNav">
 
-<!-- Chatbot -->
-<div id="chat-square" class="btn"></div>
-<div id="chat-close" class="btn chat-box-toggle">
-    <div class="close-img"></div>
-</div>
 
-<div class="chat-wrapper">
-    <div class="chat-header">
-        <div class="chat-header-photo">
-            <span class="active-circle"></span>
-        </div>
-        <div class="chat-header-name">Pooja Agarwal</div>
-    </div>
-
-    <div class="chat-box-body">
-        <div class="chat-box-overlay"></div>
-        <div class="chat-logs">
-            <div id="hb-chat-bot">
-                <div class="chat-container">
-                    <div class="chat-messages-time"></div>
-                    <div class="chat-messages-container"></div>
-                    <div class="chat-actions-container"></div>
-                    <div class="chat-footer"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Chatbot -->
 
     
 <!-- Google Tag Manager (noscript) -->
@@ -335,13 +329,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </div>
             </nav>
         </header>
-<main class="pload">
+<main class="pload" style="padding-top: 70px;">
  <!--<style>-->
  <!--    section{-->
  <!--        height: 100vh;-->
  <!--    }-->
  <!--</style>-->
-  <section class="section shadow-sm lazyload" id="developer">
+  <section class="section shadow-sm lazyload" id="developer" style="padding: 20px 15px; max-width: 1000px; margin: 0 auto;">
     <div class="thankyou-text">
 <p><br><br>
 <b>Terms &amp; Conditions</b></p><hr><br>
@@ -1197,12 +1191,12 @@ const observer = new MutationObserver((mutations) => {
         if (mutation.type === 'childList') {
             mutation.addedNodes.forEach((node) => {
                 if (node.nodeType === Node.ELEMENT_NODE) {
-                    if (node.innerHTML.includes('Shreya Shetty ') || node.innerHTML.includes('Pooja Agarwal')) {
-                        node.innerHTML = node.innerHTML.replace(/Shreya Shetty /g, 'Shreya Shetty').replace(/Pooja Agarwal/g, 'Shreya Shetty');
+                    if (node.innerHTML.includes('Shreya Shetty ') || node.innerHTML.includes('Shreya Shetty')) {
+                        node.innerHTML = node.innerHTML.replace(/Shreya Shetty /g, 'Shreya Shetty').replace(/Shreya Shetty/g, 'Shreya Shetty');
                     }
                     node.querySelectorAll('*').forEach(child => {
-                        if (child.innerHTML && (child.innerHTML.includes('Shreya Shetty ') || child.innerHTML.includes('Pooja Agarwal'))) {
-                            child.innerHTML = child.innerHTML.replace(/Shreya Shetty /g, 'Shreya Shetty').replace(/Pooja Agarwal/g, 'Shreya Shetty');
+                        if (child.innerHTML && (child.innerHTML.includes('Shreya Shetty ') || child.innerHTML.includes('Shreya Shetty'))) {
+                            child.innerHTML = child.innerHTML.replace(/Shreya Shetty /g, 'Shreya Shetty').replace(/Shreya Shetty/g, 'Shreya Shetty');
                         }
                     });
                 }
@@ -1392,12 +1386,12 @@ const observer = new MutationObserver((mutations) => {
         if (mutation.type === 'childList') {
             mutation.addedNodes.forEach((node) => {
                 if (node.nodeType === Node.ELEMENT_NODE) {
-                    if (node.innerHTML.includes('Shreya Shetty ') || node.innerHTML.includes('Pooja Agarwal')) {
-                        node.innerHTML = node.innerHTML.replace(/Shreya Shetty /g, 'Shreya Shetty').replace(/Pooja Agarwal/g, 'Shreya Shetty');
+                    if (node.innerHTML.includes('Shreya Shetty ') || node.innerHTML.includes('Shreya Shetty')) {
+                        node.innerHTML = node.innerHTML.replace(/Shreya Shetty /g, 'Shreya Shetty').replace(/Shreya Shetty/g, 'Shreya Shetty');
                     }
                     node.querySelectorAll('*').forEach(child => {
-                        if (child.innerHTML && (child.innerHTML.includes('Shreya Shetty ') || child.innerHTML.includes('Pooja Agarwal'))) {
-                            child.innerHTML = child.innerHTML.replace(/Shreya Shetty /g, 'Shreya Shetty').replace(/Pooja Agarwal/g, 'Shreya Shetty');
+                        if (child.innerHTML && (child.innerHTML.includes('Shreya Shetty ') || child.innerHTML.includes('Shreya Shetty'))) {
+                            child.innerHTML = child.innerHTML.replace(/Shreya Shetty /g, 'Shreya Shetty').replace(/Shreya Shetty/g, 'Shreya Shetty');
                         }
                     });
                 }
@@ -1514,5 +1508,34 @@ observer.observe(document.body, { childList: true, subtree: true });
     </ul>
 </div>
 
+<!-- Chatbot -->
+<div id="chat-square" class="btn"></div>
+<div id="chat-close" class="btn chat-box-toggle">
+    <div class="close-img"></div>
+</div>
+
+<div class="chat-wrapper">
+    <div class="chat-header">
+        <div class="chat-header-photo">
+            <span class="active-circle"></span>
+        </div>
+        <div class="chat-header-name">Shreya Shetty </div>
+    </div>
+
+    <div class="chat-box-body">
+        <div class="chat-box-overlay"></div>
+        <div class="chat-logs">
+            <div id="hb-chat-bot">
+                <div class="chat-container">
+                    <div class="chat-messages-time"></div>
+                    <div class="chat-messages-container"></div>
+                    <div class="chat-actions-container"></div>
+                    <div class="chat-footer"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Chatbot -->
 </body>
 </html>

@@ -211,6 +211,20 @@ img {
   text-align: center;
   text-decoration: none;
 }
+
+/* Chat wrapper mobile fix */
+@media (max-width: 767px) {
+    .chat-wrapper {
+        width: 100% !important;
+        max-width: 100% !important;
+        right: 0 !important;
+        left: 0 !important;
+        z-index: 10000 !important;
+        bottom: 0 !important;
+        height: 100% !important;
+    }
+}
+
 </style>
 
         <!-- Drift Start -->
@@ -219,35 +233,7 @@ img {
 
 
 
-<!-- Chatbot -->
-<div id="chat-square" class="btn"></div>
-<div id="chat-close" class="btn chat-box-toggle">
-    <div class="close-img"></div>
-</div>
 
-<div class="chat-wrapper">
-    <div class="chat-header">
-        <div class="chat-header-photo">
-            <span class="active-circle"></span>
-        </div>
-        <div class="chat-header-name">Shreya Shetty </div>
-    </div>
-
-    <div class="chat-box-body">
-        <div class="chat-box-overlay"></div>
-        <div class="chat-logs">
-            <div id="hb-chat-bot">
-                <div class="chat-container">
-                    <div class="chat-messages-time"></div>
-                    <div class="chat-messages-container"></div>
-                    <div class="chat-actions-container"></div>
-                    <div class="chat-footer"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Chatbot -->
 
 
 <style>
@@ -1943,5 +1929,34 @@ observer.observe(document.body, { childList: true, subtree: true });
     </ul>
 </div>
 
+<!-- Chatbot -->
+<div id="chat-square" class="btn"></div>
+<div id="chat-close" class="btn chat-box-toggle">
+    <div class="close-img"></div>
+</div>
+
+<div class="chat-wrapper">
+    <div class="chat-header">
+        <div class="chat-header-photo">
+            <span class="active-circle"></span>
+        </div>
+        <div class="chat-header-name">Shreya Shetty </div>
+    </div>
+
+    <div class="chat-box-body">
+        <div class="chat-box-overlay"></div>
+        <div class="chat-logs">
+            <div id="hb-chat-bot">
+                <div class="chat-container">
+                    <div class="chat-messages-time"></div>
+                    <div class="chat-messages-container"></div>
+                    <div class="chat-actions-container"></div>
+                    <div class="chat-footer"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Chatbot -->
 </body>
 </html>
