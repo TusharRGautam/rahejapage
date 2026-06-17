@@ -224,10 +224,7 @@ img {
         height: 100% !important;
     }
     #chat-close {
-        top: 15px !important;
-        right: 15px !important;
-        bottom: auto !important;
-        z-index: 10001 !important;
+        display: none !important;
     }
 }
 
@@ -1947,6 +1944,7 @@ observer.observe(document.body, { childList: true, subtree: true });
             <span class="active-circle"></span>
         </div>
         <div class="chat-header-name">Shreya Shetty </div>
+        <span class="chat-header-close" onclick="$('#chat-close').click()" style="position: absolute; right: 15px; top: 12px; font-size: 28px; cursor: pointer; color: white; line-height: 1; z-index: 100000;">&times;</span>
     </div>
 
     <div class="chat-box-body">
